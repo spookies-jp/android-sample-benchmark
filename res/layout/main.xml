@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:gravity="center">
+        <FrameLayout android:layout_height="100px" android:layout_width="100px" android:id="@+id/plot_area" android:background="#fff"></FrameLayout>
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout3" android:orientation="vertical" android:layout_height="wrap_content" android:gravity="center">
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center" android:id="@+id/linearLayout1">
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="@string/t"></TextView>
+                <EditText android:text="@string/default_t" android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="numberDecimal" android:id="@+id/t_limit"></EditText>
+            </LinearLayout>
+            <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/mode" android:orientation="horizontal">
+                <RadioButton android:checked="true" android:id="@+id/mode_java" android:layout_height="wrap_content" android:text="@string/label_java" android:layout_width="wrap_content"></RadioButton>
+                <RadioButton android:id="@+id/mode_native" android:layout_height="wrap_content" android:text="@string/label_ndk" android:layout_width="wrap_content"></RadioButton>
+            </RadioGroup>
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/button1" android:onClick="onStartButtonClicked" android:text="@string/start"></Button>
+        </LinearLayout>
+    </LinearLayout>
+<ProgressBar android:layout_height="wrap_content" android:id="@+id/progressbar" android:layout_width="fill_parent" style="?android:attr/progressBarStyleHorizontal"></ProgressBar>
+</LinearLayout>

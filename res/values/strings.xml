@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Benchmark</string>
+    <string name="finish">計算終了</string>
+    <string name="start">スタート</string>
+    <string name="t">ループ数</string>
+    <string name="default_t">1000</string>
+    <string name="label_java">Java</string>
+    <string name="label_ndk">Native</string>
+</resources>
